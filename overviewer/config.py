@@ -1,6 +1,6 @@
 outputdir = "/map"
 rendermode = "smooth_lighting"
-world_name = "House Server"
+world_name = "MCServer"
 worlds[world_name] = "/data/world"
 renders["North"] = {
 	'world': world_name,

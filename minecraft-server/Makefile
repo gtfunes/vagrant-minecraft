@@ -7,8 +7,11 @@ all:
 		--name minecraft \
 		--publish 25565:25565 \
 		--env EULA=true \
+		--env SERVER_NAME=MCServer \
 		--env DIFFICULTY=normal \
 		--env ALLOW_NETHER=true \
+		--env ALLOW_END=true \
+		--env PVP=true \
 		--env ANNOUNCE_PLAYER_ACHIEVEMENTS=true \
 		--env GENERATE_STRUCTURES=true \
 		--env MEMORY=2G \

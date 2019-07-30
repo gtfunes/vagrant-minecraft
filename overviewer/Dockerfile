@@ -9,7 +9,7 @@ RUN apt-get update && \
     useradd --create-home --uid 1000 --gid 100 notch
 
 USER notch
-ENV MINECRAFT_VERSION 1.11
+ENV MINECRAFT_VERSION 1.18
 RUN mkdir -p /home/notch/.minecraft/versions/${MINECRAFT_VERSION} && \
     wget -q -P /home/notch/.minecraft/versions/${MINECRAFT_VERSION} https://s3.amazonaws.com/Minecraft.Download/versions/${MINECRAFT_VERSION}/${MINECRAFT_VERSION}.jar && \
     git clone git://github.com/overviewer/Minecraft-Overviewer.git /home/notch/overviewer && \
